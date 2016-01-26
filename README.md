@@ -1,4 +1,4 @@
-# sails-hook-sequelize-blueprints
+# sails-hook-sequelize-blueprints with pubsub
 Sails blueprints for sequelize ORM with pubsub support
 Fork of [sails-hook-sequelize-blueprints](https://github.com/festo/sails-hook-sequelize-blueprints)
 
@@ -16,8 +16,9 @@ and [sails-hook-sequelize-pubsub](github.com/ya-kostik/sails-hook-sequelize-pubs
 $ npm install sails-hook-sequelize-pubsub --save
 ```
 
-Install this hook with:
+Install this hook:
 
+Just add it to your package.json file
 ```javascript
 ...
 "dependencies": {

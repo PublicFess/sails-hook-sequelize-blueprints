@@ -89,7 +89,7 @@ module.exports = function remove(req, res) {
 
       // If we have the pubsub hook, use the model class's publish method
       // to notify all subscribers about the removed item
-      if (sails.hooks.pubsub) {
+      if (sails.hooks['sequelize-pubsub']) {
         Model.publishRemove(parentRecord[Model.primaryKey], relation, childPk, !sails.config.blueprints.mirror && req);
       }
 

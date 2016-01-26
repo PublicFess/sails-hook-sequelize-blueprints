@@ -1,10 +1,8 @@
 # sails-hook-sequelize-blueprints
-Sails blueprints for sequelize ORM
+Sails blueprints for sequelize ORM with pubsub support
+Fork of [sails-hook-sequelize-blueprints](https://github.com/festo/sails-hook-sequelize-blueprints)
 
-[![Build Status](https://travis-ci.org/cesardeazevedo/sails-hook-sequelize-blueprints.svg)](https://travis-ci.org/cesardeazevedo/sails-hook-sequelize-blueprints)
-[![npm version](https://badge.fury.io/js/sails-hook-sequelize-blueprints.svg)](http://badge.fury.io/js/sails-hook-sequelize-blueprints)
-
-The blueprints waterline replaced with sequelize.
+The blueprints waterline replaced with sequelize with pubsub support.
 
 #Install
 
@@ -12,11 +10,26 @@ Install [sails-hook-sequelize](https://github.com/festo/sails-hook-sequelize) fi
 ```sh
 $ npm install sails-hook-sequelize --save
 ```
+and [sails-hook-sequelize-pubsub](github.com/ya-kostik/sails-hook-sequelize-pubsub)
+
+```sh
+$ npm install sails-hook-sequelize-pubsub --save
+```
 
 Install this hook with:
 
+```javascript
+...
+"dependencies": {
+    "sails-hook-sequelize-blueprints": "https://github.com/ya-kostik/sails-hook-sequelize-blueprints#master",
+},
+...
+```
+
+and run
+
 ```sh
-$ npm install sails-hook-sequelize-blueprints --save
+$ npm install
 ```
 
 Sequelize dependencies:

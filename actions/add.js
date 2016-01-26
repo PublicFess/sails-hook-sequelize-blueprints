@@ -164,7 +164,7 @@ module.exports = function addToCollection (req, res) {
 
 
         ChildModel.create(child).then(function(newChildRecord){
-          if (req._sails.hooks.pubsub) {
+          if (req._sails.hooks['sequelize-pubsub']) {
             if (req.isSocket) {
               ChildModel.subscribe(req, newChildRecord);
               ChildModel.introduce(newChildRecord);

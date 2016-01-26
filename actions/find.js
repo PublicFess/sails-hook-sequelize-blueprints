@@ -59,7 +59,7 @@ module.exports = function findRecords (req, res) {
   }).then(function(matchingRecords) {
     // Only `.watch()` for new instances of the model if
     // `autoWatch` is enabled.
-    if (req._sails.hooks.pubsub && req.isSocket) {
+    if (req._sails.hooks['sequelize-pubsub'] && req.isSocket) {
       Model.subscribe(req, matchingRecords);
       if (req.options.autoWatch) { Model.watch(req); }
       // Also subscribe to instances of all associated models

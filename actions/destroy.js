@@ -29,7 +29,7 @@ module.exports = function destroyOneRecord (req, res) {
 
     Model.destroy({ where: { id: pk }}).then(function() {
 
-      if (req._sails.hooks.pubsub) {
+      if (req._sails.hooks['sequelize-pubsub']) {
         Model.publishDestroy(pk, !req._sails.config.blueprints.mirror && req, {previous: record});
         if (req.isSocket) {
           Model.unsubscribe(req, record);

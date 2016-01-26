@@ -10,7 +10,7 @@ Install [sails-hook-sequelize](https://github.com/festo/sails-hook-sequelize) fi
 ```sh
 $ npm install sails-hook-sequelize --save
 ```
-and [sails-hook-sequelize-pubsub](github.com/ya-kostik/sails-hook-sequelize-pubsub)
+and [sails-hook-sequelize-pubsub](https://github.com/ya-kostik/sails-hook-sequelize-pubsub)
 
 ```sh
 $ npm install sails-hook-sequelize-pubsub --save
